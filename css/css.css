@@ -1,0 +1,66 @@
+/* -- DEFAULTS -- */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Lora', serif;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    width:100%;
+}
+
+header {
+    background-color: green;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    color:greenyellow;
+}
+
+#comments_label {
+    display: none;
+}
+
+#comments {
+    width: 100%;
+}
+
+#email_label {
+    display: none;
+}
+
+#email {
+    width: 100%;
+}
+
+#url_label {
+    display: none;
+}
+
+#url {
+    width: 100%;
+}
+
+#password_label {
+    display: none;
+}
+
+#password {
+    width: 100%;
+}
+
+#submit_label {
+    display: none;
+}
+
+#submit {
+    width: 100%;
+}
+
