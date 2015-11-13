@@ -18,12 +18,16 @@ form{
 }
 
 header {
-    background-color: green;
     text-align: center;
     padding-top: 12px;
     padding-bottom: 8px;
-    color:greenyellow;
+    color: white;
     font-family: 'Lora', serif;
+}
+
+.masthead {
+    background-image:url("/images/greenV2.jpg");
+    background-size: cover;
 }
 
 fieldset {
@@ -36,7 +40,7 @@ fieldset {
 
 legend {
     font-family: 'Lora', serif;
-    color: yellowgreen;
+    color: white;
     font-weight: 800;
     font-size: 1.2rem;
     background-color: green;
@@ -56,8 +60,8 @@ div .box {
 
 #comments {
     width: 100%;
-    padding: 5% 0 5% 0;
-    margin: 1.5% auto 0 auto;
+    padding: 4% 0% 4% 0.5%;
+    margin: 1%% auto 0 auto;
 }
 
 #email_label {
@@ -67,6 +71,7 @@ div .box {
 #email {
     width: 100%;
     margin: 1.5% auto 0 auto;
+    padding: 0.5%;
 }
 
 #url_label {
@@ -76,6 +81,7 @@ div .box {
 #url {
     width: 100%;
     margin: 1.5% auto 0 auto;
+    padding: 0.5%;
 }
 
 #password_label {
@@ -85,6 +91,7 @@ div .box {
 #password {
     width: 100%;
     margin: 1.5% auto 0 auto;
+    padding: 0.5%;
 }
 
 #submit_label {
@@ -94,6 +101,7 @@ div .box {
 #submit {
     width: 100%;
     margin: 1.5% auto 0 auto;
+    padding: 0.5%;
 }
 
 @media only screen and (min-device-width: 36em) and (max-device-width: 60em) {
