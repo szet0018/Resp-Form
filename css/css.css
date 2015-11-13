@@ -6,10 +6,11 @@
 }
 
 html, body {
-    font-family: 'Lora', serif;
     font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
+    background-color: green;
 }
 
 form{
@@ -22,6 +23,31 @@ header {
     padding-top: 12px;
     padding-bottom: 8px;
     color:greenyellow;
+    font-family: 'Lora', serif;
+}
+
+fieldset {
+    margin: 2%;
+    background-color: yellowgreen;
+    position: relative;
+    padding-top: 3%;
+}
+
+
+legend {
+    font-family: 'Lora', serif;
+    color: yellowgreen;
+    font-weight: 800;
+    font-size: 1.2rem;
+    background-color: green;
+    padding: 2% 0 2% 0;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+div .box {
+    
 }
 
 #comments_label {
@@ -30,6 +56,8 @@ header {
 
 #comments {
     width: 100%;
+    padding: 5% 0 5% 0;
+    margin: 1.5% auto 0 auto;
 }
 
 #email_label {
@@ -38,6 +66,7 @@ header {
 
 #email {
     width: 100%;
+    margin: 1.5% auto 0 auto;
 }
 
 #url_label {
@@ -46,6 +75,7 @@ header {
 
 #url {
     width: 100%;
+    margin: 1.5% auto 0 auto;
 }
 
 #password_label {
@@ -54,6 +84,7 @@ header {
 
 #password {
     width: 100%;
+    margin: 1.5% auto 0 auto;
 }
 
 #submit_label {
@@ -62,5 +93,18 @@ header {
 
 #submit {
     width: 100%;
+    margin: 1.5% auto 0 auto;
 }
 
+@media only screen and (min-device-width: 36em) and (max-device-width: 60em) {
+    
+    input#comments, input#email, input#submit {
+        display: block;
+        width: 50%;
+        float: left;
+    }
+
+}
+
+@media only screen and (min-device-width: 36em) and (max-device-width: 60em) {
+}
