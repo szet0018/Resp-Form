@@ -98,7 +98,7 @@ div .box {
 
 @media only screen and (min-device-width: 36em) and (max-device-width: 60em) {
     
-    input#comments, input#email, input#submit {
+    .box_comments input #comments, .box_email input #email, .box_submit input #submit{
         display: block;
         width: 50%;
         float: left;
