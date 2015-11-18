@@ -7,112 +7,155 @@
 
 html, body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
     margin: 0;
     padding: 0;
-    background-color: green;
-}
-
-form{
-    width:100%;
+    background-color: #004d00;
 }
 
 header {
+    background-image: url(/images/greenV2.jpg);
+    background-size: cover;
     text-align: center;
     padding-top: 12px;
     padding-bottom: 8px;
-    color: white;
+    color: white; 
+    text-shadow: black 0.1em 0.1em 0.2em;
     font-family: 'Lora', serif;
 }
 
-.masthead {
-    background-image:url("/images/greenV2.jpg");
-    background-size: cover;
+form{
+    width: 90%;
+    margin: 0 auto;
 }
 
 fieldset {
-    margin: 2%;
-    background-color: yellowgreen;
+    margin: 8%;
+    background-color: #00b300;
     position: relative;
     padding-top: 3%;
+    border: 5px solid black;
 }
-
 
 legend {
     font-family: 'Lora', serif;
-    color: white;
+    color: white; 
+    text-shadow: black 0.1em 0.1em 0.2em;
     font-weight: 800;
     font-size: 1.2rem;
-    background-color: green;
+    background-color: #004d00;
     padding: 2% 0 2% 0;
     float: left;
     width: 100%;
     text-align: center;
+    margin: 0 0 3% 0;
 }
 
-div .box {
-    
+label {
+    display: block;
+    color: transparent;
+    font-size: 0;
 }
 
-#comments_label {
-    display: none;
+input {
+    width: 100%;
+    margin: 1.5%;
 }
 
 #comments {
-    width: 100%;
-    padding: 4% 0% 4% 0.5%;
-    margin: 1%% auto 0 auto;
+    padding: 3% 3% 3% 1%;
 }
 
-#email_label {
-    display: none;
+#fullname, #email, #website, #pwd, #submit {
+    padding: 1% 1% 1% 2%;
 }
 
-#email {
-    width: 100%;
-    margin: 1.5% auto 0 auto;
-    padding: 0.5%;
+.box {
+    padding: 1%;
 }
 
-#url_label {
-    display: none;
-}
 
-#url {
-    width: 100%;
-    margin: 1.5% auto 0 auto;
-    padding: 0.5%;
-}
-
-#password_label {
-    display: none;
-}
-
-#password {
-    width: 100%;
-    margin: 1.5% auto 0 auto;
-    padding: 0.5%;
-}
-
-#submit_label {
-    display: none;
-}
-
-#submit {
-    width: 100%;
-    margin: 1.5% auto 0 auto;
-    padding: 0.5%;
-}
-
-@media only screen and (min-device-width: 36em) and (max-device-width: 60em) {
+@media only screen and (min-width: 36rem) and (max-width: 60rem) {
     
-    .box_comments input #comments, .box_email input #email, .box_submit input #submit{
-        display: block;
+    .box {
         width: 50%;
         float: left;
     }
-
+    
+    label {
+        font-size: 1rem;
+        color: white; 
+        text-shadow: black 0.1em 0.1em 0.2em;
+        padding: 0 0 0 2%
+    
+    }
+    
+    input {
+        width: 95%;
+    }
+    
+    fieldset {
+        margin: 6% 1.5% 1.5% 1.5%;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        margin: 1%;
+    }
+    
+    legend {
+        font-size: 1.6rem;
+    }
+    
+    .box:last-of-type {
+        clear: both;
+    }
 }
 
-@media only screen and (min-device-width: 36em) and (max-device-width: 60em) {
+@media only screen and (min-width: 60rem) {
+    .box {
+        width: 50%;
+        float: left;
+    }
+    
+    label {
+        display: inline-block;
+        width: 20%;
+        float: left;
+        font-size: 1rem;
+        color: white; 
+        text-shadow: black 0.1em 0.1em 0.2em;
+        text-align: right;
+    
+    }
+    
+    input {
+        width: 78%;
+        float: right;
+        padding: 0;
+        margin: 0;
+    }
+    
+    fieldset {
+        margin: 6% 1.5% 1.5% 1.5%;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        margin: 1%;
+    }
+    
+    legend {
+        font-size: 1.6rem;
+    }
+    
+    #submit {
+        margin: 0;
+    }
+    
+    .box:last-of-type {
+        clear: both;
+        width: 30%;
+    }
+
+}
 }
